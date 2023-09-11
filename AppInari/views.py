@@ -3,11 +3,14 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import DeleteView, UpdateView, CreateView
-from .models import Producto
+from .models import Producto, Cliente, Carrito
 
-def producto(self):
-    producto = Producto(nombre="Shampoo Solido", precio="2000")
-    producto.save()
-    documentoDeTexto = f"--->Producto: {producto.nombre} Precio: {producto.precio}"
+def producto(req):
+    return render(req, "producto.html")
 
-    return HttpResponse(documentoDeTexto)
+def cliente(req):
+    return render(req, "clientes.html")
+
+def carrito(req):
+    return render(req, "carrito.html")
+
