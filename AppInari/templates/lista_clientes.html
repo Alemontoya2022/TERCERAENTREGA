@@ -1,0 +1,12 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+    
+    <ul>
+
+        {% for clientes in lista_clientes %}
+            <li>{{ clientes.nombre }} - {{ clientes.apellido }} - {{ clientes.cel }} - {{ clientes.email }}</li> 
+        {% endfor %}
+
+    </ul>
+{% endblock contenidoQueCambia %}
