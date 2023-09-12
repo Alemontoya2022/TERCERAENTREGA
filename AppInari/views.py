@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import DeleteView, UpdateView, CreateView
+<<<<<<< HEAD
 from .models import Producto, Clientes, Carrito
 from .forms import ClienteFormulario
 
@@ -47,3 +48,16 @@ def clienteFormulario(req):
 
         miFormulario = clienteFormulario()
         return render(req, "clienteFormulario.html", {"miFormulario": miFormulario})
+=======
+from .models import Producto, Cliente, Carrito
+
+def producto(req):
+    return render(req, "producto.html")
+
+def cliente(req):
+    return render(req, "clientes.html")
+
+def carrito(req):
+    return render(req, "carrito.html")
+
+>>>>>>> a28d1498d5875a7b9648b4d0659bad062d430a1a
