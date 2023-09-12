@@ -1,9 +1,5 @@
 """
-<<<<<<< HEAD
 URL configuration for ProyectoCoder project.
-=======
-URL configuration for INARI project.
->>>>>>> a28d1498d5875a7b9648b4d0659bad062d430a1a
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -20,11 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-<<<<<<< HEAD
 from AppInari.views import Clientes, listar_clientes
 
-=======
->>>>>>> a28d1498d5875a7b9648b4d0659bad062d430a1a
 
 urlpatterns = [
     path('admin/', admin.site.urls),
