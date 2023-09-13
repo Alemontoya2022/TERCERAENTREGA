@@ -1,0 +1,12 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+    
+    <ul>
+        <h3>A continuacion van los productos detallados de la tienda INARI</h3>
+        {% for producto in productosInari %}
+            <li>{{ producto.nombre }} - {{ producto.precio }}</li>
+        {% endfor %}
+
+    </ul>
+{% endblock contenidoQueCambia %}

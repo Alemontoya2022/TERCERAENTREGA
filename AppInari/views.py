@@ -85,5 +85,11 @@ def productoFormulario(req):
             return render(req, "inicio.html")
     else:
 
-        miFormulario = ClienteFormulario()
+        miFormulario = productoFormulario()
         return render(req, "productoFormulario.html", {"miFormulario": miFormulario})
+    
+def productosInari(req):
+
+    producto = Producto.objects.all()
+
+    return render(req, "productosInari.html", {"producto": producto})

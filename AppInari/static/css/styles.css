@@ -8136,7 +8136,7 @@ textarea.form-control-lg {
 
 .bg-success {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #dad0c5 !important;
 }
 
 .bg-info {
@@ -8175,7 +8175,7 @@ textarea.form-control-lg {
 
 .bg-body {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #dad0c5 !important;
 }
 
 .bg-transparent {
