@@ -14,7 +14,7 @@ class Producto(models.Model):
         precio = models.IntegerField()
 
         def __str__(self):
-                return f'{self.nombre} {self.apellido}'
+                return f'{self.nombre} {self.precio}'
 
 class Carrito(models.Model):
         producto = models.CharField(max_length=40)

@@ -61,7 +61,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #dad0c5;
+  --bs-body-color: #ef8f29;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -8160,8 +8160,7 @@ textarea.form-control-lg {
 }
 
 .bg-dark {
-  --bs-bg-opacity: 1;
-  background-color: (var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #dad0c5 !important;
 }
 
 .bg-black {

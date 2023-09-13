@@ -1,7 +1,7 @@
 {% extends 'padre.html' %}
 
 {% block contenidoQueCambia %}
-    <form action="{% url 'clienteFormulario' %}" method="post">{% csrf_token %}
+    <form action="{% url 'productoFormulario' %}" method="post">{% csrf_token %}
 
         {{miFormulario.as_p}}
 
