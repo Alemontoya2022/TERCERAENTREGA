@@ -1,0 +1,18 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+
+    <p>Resultados de la busqueda del producto</p>
+
+    
+    {% if productos %}        
+        <ul>
+            {% for producto in productos %}
+                <li>{{producto.nombre}}</li>
+                <li>{{producto.precio}}</li>
+            {% endfor %}
+        </ul>
+
+    {% endif %}
+        
+{% endblock contenidoQueCambia %}

@@ -93,3 +93,17 @@ def productosInari(req):
     producto = Producto.objects.all()
 
     return render(req, "productosInari.html", {"producto": producto})
+
+def busquedaProducto(req):
+    return render(req, "busquedaProducto.html")
+
+def buscar(req: HttpRequest):
+    if req.GET["producto"]:    # respuesta = f"Estoy buscando el producto {req.GET['producto']}"
+        precio = req.GET['producto']
+        productos = Producto.objects.filter(precio__icontains=precio)
+        return render(req, "resultadosBusqueda.html", {"productos": producto, "precio": precio}) 
+    else:
+        return HttpResponse(f"Debe agregar un precio")
+
+
+

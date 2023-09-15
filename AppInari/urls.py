@@ -11,4 +11,6 @@ urlpatterns = [
     path('producto-formulario/', productoFormulario, name="productoFormulario"),
     path('lista-productos/', listar_producto, name='ListaProductos'),
     path('productosInari/', productosInari, name='productosInari'),
+    path('busquedaProducto/', views.busquedaProducto, name='busquedaProducto'),
+    path('buscar/', buscar, name="Buscar"),
     ]
